@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class S3Configuration {
 
-    @Value("${accesskey = AKIAX5ZVY3ZF6UTTONBU}")
+    @Value("${accesskey}")
     private static String accesskey ;
-    @Value("${secrateKey = ldEzmgCJ5AsL+zXNf2AmZlJUhcXGN0ABo+T6sfCi}")
+    @Value("${secrateKey}")
     private static  String secrateKey;
     private String region = "ap-south-1";
 
