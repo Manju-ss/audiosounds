@@ -1,0 +1,17 @@
+server:
+  port: 443
+  ssl:
+    key-alis: audio-https
+    key-store: audio-https.p12
+    key-store-type: PKCS12
+    key-store-password: audiosound
+
+
+
+# keytool -genkey -alias audio-https -storetype PKCS12 -keyalg RSA -keysize 1048 -validity 365 -keystore audio-https.p12
+#    password audiosound,  Is CN=manju, OU=xyz, O=xyz, L=bangalore, ST=karnataka, C=IN correct?
+
+
+  //    private static String accesskey = "AKIAX5ZVY3ZF6UTTONBU";
+  
+  //    private static  String secrateKey = "ldEzmgCJ5AsL+zXNf2AmZlJUhcXGN0ABo+T6sfCi";

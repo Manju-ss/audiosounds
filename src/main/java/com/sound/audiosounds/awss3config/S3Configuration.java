@@ -11,14 +11,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class S3Configuration {
 
-    private static String accesskey = "AKIAX5ZVY3ZF6UTTONBU";
-
-    private static  String secrateKey = "ldEzmgCJ5AsL+zXNf2AmZlJUhcXGN0ABo+T6sfCi";
     private String region = "ap-south-1";
 
     @Bean
     public AmazonS3 generateS3Client(){
-    AWSCredentials credentials = new BasicAWSCredentials(accesskey, secrateKey);
+    AWSCredentials credentials = new BasicAWSCredentials("accesskey", "secrateKey");
     return AmazonS3ClientBuilder.standard()
             .withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(region).build();
     }
